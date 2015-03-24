@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MNMBottomPullToRefreshManager.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate,MNMBottomPullToRefreshManagerClient>
 
+@property(nonatomic, strong) NSString *movieSearchString;
 
 @end
 
